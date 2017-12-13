@@ -7,20 +7,13 @@ a { text-decoration: none }
 a:hover { text-decoration: none }
 a:active { text-decoration: none }
 a:focus { text-decoration: none }
+p { margin: 0 }
 
 .text-container {
   text-align: justify;
   padding: 10px;
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
-}
-
-.text-container a {
-  font-weight: bold;
-}
-
-.text-container a:hover {
-  text-decoration: underline;
 }
 
 .box-shadow {
@@ -70,6 +63,7 @@ a:focus { text-decoration: none }
 
 .overflow-x-auto {
   overflow-x: auto;
+  overflow: -moz-scrollbars-none;
 }
 
 .overflow-x-auto::-webkit-scrollbar {
@@ -129,6 +123,16 @@ a:focus { text-decoration: none }
 
 .bar-item-content img {
   width: 100%;
+}
+
+.list-group-item {
+  padding: 10px;
+  border-top: 2px solid #e1e1e1;
+  font-size: 16px;
+}
+
+a .list-group-item:hover {
+  background: #e1e1e1;
 }
 
 .spot-image {

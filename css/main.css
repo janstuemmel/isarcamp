@@ -87,11 +87,11 @@ p { margin: 0 }
   font-family: 'Bungee';
   background-color: #e1e1e1;
   padding: 10px 10px 10px 10px;
-  margin: 0px 5px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
-.navigation-item:last-child {
-  margin: 0px 0px 0px 0px;
+.navigation-item.active {
+  background-color: #d1d1d1;
 }
 
 .navigation-item:hover {

@@ -1,11 +1,22 @@
+{% assign pname = page.name | remove: '.html' %}
 <div class="navigation row">
   <div class="col-sm-12">
     <div class="flex-container box-shadow overflow-x-auto">
-      <a class="navigation-link" href="#"><div class="navigation-item">Camping</div></a>
-      <a class="navigation-link" href="#"><div class="navigation-item">Konzept</div></a>
-      <a class="navigation-link" href="#"><div class="navigation-item mid">Home</div></a>
-      <a class="navigation-link" href="#"><div class="navigation-item">Über&nbsp;uns</div></a>
-      <a class="navigation-link" href="#"><div class="navigation-item">Impressum</div></a>
+      <a class="navigation-link" href="#">
+        <div class="navigation-item {% if pname == "camp" %}active{% endif %}">Camping</div>
+      </a>
+      <a class="navigation-link" href="#">
+        <div class="navigation-item {% if pname == "concept" %}active{% endif %}">Konzept</div>
+      </a>
+      <a class="navigation-link" href="#">
+        <div class="navigation-item mid {% if pname == "index" %}active{% endif %}">Home</div>
+      </a>
+      <a class="navigation-link" href="#">
+        <div class="navigation-item {% if pname == "about" %}active{% endif %}">Über&nbsp;uns</div>
+      </a>
+      <a class="navigation-link" href="#">
+        <div class="navigation-item {% if pname == "imprint" %}active{% endif %}">Impressum</div>
+      </a>
     </div>
   </div>
 </div>

@@ -1,0 +1,43 @@
+{% assign pname = page.name | remove: '.html' | remove: '.md' %}
+
+{% assign text = site.data.locale[include.lang] %}
+
+{% if include.lang == "de" %}
+  {% assign lang_red = "" %}
+{% else %}
+  {% assign lang_red = "/en" %}
+{% endif %}
+
+<div class="row top-nav">
+  <div class="col-sm-12">
+    <i class="fa fa-facebook-official fa-inverse fa-2x pull-right"></i>
+    <i class="fa fa-instagram fa-inverse fa-2x pull-right"></i>
+    <a href="{{ site.baseurl }}/{%if include.lang == "de" %}en{% endif %}{% if pname != "index" %}/{{ pname }}{% endif %}">
+      <i class="fa fa-custom pull-right">
+          <div class="lang-icon {{ include.lang }}">&nbsp;</div>
+      </i>
+    </a>
+  </div>
+</div>
+
+<div class="navigation row">
+  <div class="col-sm-12">
+    <div class="flex-container box-shadow overflow-x-auto">
+      <a class="navigation-link" href="{{ site.baseurl | append: lang_red }}/camping">
+        <div class="navigation-item {% if pname == "camping" %}active{% endif %}">{{ text.navigation.camping }}</div>
+      </a>
+      <a class="navigation-link" href="#">
+        <div class="navigation-item {% if pname == "concept" %}active{% endif %}">{{ text.navigation.concept }}</div>
+      </a>
+      <a class="navigation-link" href="{{ site.baseurl | append: lang_red }}/">
+        <div class="navigation-item mid {% if pname == "index" %}active{% endif %}">{{ text.navigation.home }}</div>
+      </a>
+      <a class="navigation-link" href="#">
+        <div class="navigation-item {% if pname == "about" %}active{% endif %}">{{ text.navigation.about }}</div>
+      </a>
+      <a class="navigation-link" href="#">
+        <div class="navigation-item {% if pname == "imprint" %}active{% endif %}">{{ text.navigation.imprint }}</div>
+      </a>
+    </div>
+  </div>
+</div>

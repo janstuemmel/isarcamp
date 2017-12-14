@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #6e8888;
+  background: #427c7c;
 }
 
 a { text-decoration: none }
@@ -30,10 +30,10 @@ p { margin: 0 }
 }
 
 .sky {
-  background: #6e8888;
-  background: -webkit-linear-gradient(to top, #6e8888, #022333);
-  background: linear-gradient(to top, #6e8888, #022333);
-  background: -olinear-gradient(to top, #6e8888, #022333);
+  background: #427c7c;
+  background: -webkit-linear-gradient(to top, #427c7c, #022333);
+  background: linear-gradient(to top, #427c7c, #022333);
+  background: -olinear-gradient(to top, #427c7c, #022333);
   position: absolute;
   top: 0;
   width: 100%;
@@ -101,6 +101,42 @@ p { margin: 0 }
 .navigation-item.mid {
   padding: 10px 20px 10px 20px;
   flex-grow: 0;
+}
+
+.top-nav i {
+  padding-left: 12px;
+}
+
+.fa.fa-custom {
+  font-size: 1.7em;
+  vertical-align: top;
+  position: relative;
+  top: 2px;
+}
+
+.lang-icon {
+  width: 30px;
+  border-radius: 5px;
+}
+
+.lang-icon.de {
+  background:url(../img/de.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.lang-icon.de:hover {
+  background:url(../img/en.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.lang-icon.en {
+  background:url(../img/en.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.lang-icon.en:hover {
+  background:url(../img/de.svg) no-repeat top center;
+  background-size: cover;
 }
 
 .bar-item {

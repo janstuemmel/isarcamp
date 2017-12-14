@@ -1,0 +1,109 @@
+
+{% include common/logo.html %}
+
+{% assign text = site.data.locale[page.lang] %}
+
+<div class="row">
+  <!-- location plan -->
+  <div class="col-sm-6">
+    <div class="bar-item box-shadow">
+      <div class="bar-item-header">{{ text.start_location_header }}</div>
+      <div class="bar-item-content">
+        <div class="spot-image"></div>
+        <div class="text-container"><p>{{ text.start_location_text }}</p></div>
+        <div class="list-group">
+          <a href="#">
+            <div class="list-group-item">
+              <i class="fa fa-map"></i>&nbsp;
+              {{ text.start_location_plan }}
+            </div>
+          </a>
+          <a href="{{ site.data.var.google_maps_link }}" target="_BLANK">
+            <div class="list-group-item">
+              <i class="fa fa-map-marker"></i>&nbsp;
+              Google Maps
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- info box -->
+  <div class="col-sm-6">
+    <div class="bar-item box-shadow">
+      <div class="bar-item-header">{{ text.start_info_header }}</div>
+      <div class="bar-item-content">
+        <div class="list-group" style="text-align:center">
+          <div class="list-group-item">
+            {{
+              text.start_info_season
+              | replace: "$from", site.data.var.season.from
+              | replace: "$to", site.data.var.season.to
+              | markdownify
+            }}
+          </div>
+          <div class="list-group-item">
+            {{
+              text.start_info_reception
+              | replace: "$m_from", site.data.var.reception.m_from
+              | replace: "$m_to", site.data.var.reception.m_to
+              | replace: "$e_from", site.data.var.reception.e_from
+              | replace: "$e_to", site.data.var.reception.e_to
+              | replace: "$checkout", site.data.var.reception.checkout
+              | newline_to_br
+              | markdownify
+            }}
+          </div>
+          <div class="list-group-item">
+            {{
+              text.start_info_bar
+              | replace: "$m_from", site.data.var.bar.m_from
+              | replace: "$m_to", site.data.var.bar.m_to
+              | replace: "$e_from", site.data.var.bar.e_from
+              | replace: "$e_to", site.data.var.bar.e_to
+              | newline_to_br
+              | markdownify
+            }}
+          </div>
+          <div class="list-group-item">
+            {{
+              text.start_info_sleep
+              | replace: "$from", site.data.var.sleep.from
+              | replace: "$to", site.data.var.sleep.to
+              | markdownify
+            }}
+          </div>
+          <div class="list-group-item">
+            {{ text.start_info_caravan | markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <!-- prices -->
+  <div class="col-sm-6">
+    <div class="bar-item box-shadow">
+      <div class="bar-item-header">{{ text.start_prices_header }}</div>
+      <div class="bar-item-content">
+        <table class="table prices">
+          <thead>
+            <tr>
+              <td>{{ text.start_prices_per_night }}</td>
+              <td>{{ text.start_prices_euro }}</td>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in site.data.var.prices %}
+              <tr>
+                <td>{{ text.start_prices_types[p.type] }}</td>
+                <td>{{ p.price }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

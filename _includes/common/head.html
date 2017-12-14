@@ -1,10 +1,13 @@
 {% assign text = site.data.locale[include.lang] %}
 <head>
+  <title>IsarCamp</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>IsarCamp</title>
-  <link href="https://fonts.googleapis.com/css?family=Bungee|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee|Raleway" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <!-- preload -->
+  <link rel="preload" href="{{ site.baseurl }}/img/de.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="{{ site.baseurl }}/img/en.svg" as="image" type="image/svg+xml">
 </head>

@@ -1,0 +1,50 @@
+navigation:
+  camping: Camping
+  concept: Concept
+  home: Home
+  about: About
+  imprint: Imprint
+
+start_location_header: Location
+
+start_location_text: >
+  Im Herzen von Freising. Genüber vom Bahnhof, am Park+Ride Parkplatz.
+  Tangensiert vom Radlweg nach München. Die perfekte Lage um Freising
+  zu besuchen oder an der Isar zu entspannen.
+
+start_location_plan: Location plan
+
+start_info_header: Info
+
+start_info_season: |
+  **Season** from **$from** to **$to**
+
+start_info_reception: |
+  **Reception**
+  Before **noon** between **$m_from** and **$m_to**
+  In the **evenings** between **$e_from** and **$e_to**
+  <small>Checkout till **$checkout** - Pay cash</small>
+
+start_info_bar: |
+  **Bar**
+  Before **noon** between **$m_from** and **$m_to**
+  In the **evenings** between **$e_from** and **$e_to**
+  <small>Breakfast, rolls, drinks</small>
+
+start_info_sleep: |
+  **Night rest** between **$from** and **$to**
+
+start_info_caravan: |
+  **No electricity** for **caravans** available
+
+start_prices_header: Prices
+
+start_prices_per_night: Per night
+
+start_prices_euro: Euro
+
+start_prices_types:
+  person: "Person"
+  reduced: "Reduced"
+  tent: "Tent"
+  car: "Car"

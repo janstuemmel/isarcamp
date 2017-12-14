@@ -1,0 +1,9 @@
+# site
+baseurl: "/isarcamp"
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", ".gitignore", "package.json", "package-lock.json", "README.md"]
+
+# configuaration
+livereload: true
+liquid:
+  error_mode: strict
+strict_front_matter: true

@@ -1,0 +1,36 @@
+google_maps_link: https://goo.gl/maps/nE4DujFLDQy
+
+season:
+  from: 15.04.
+  to: 15.09.
+
+reception:
+  m_from: "8:00"
+  m_to: "12:00"
+  e_from: "17:00"
+  e_to: "21:00"
+  checkout: "14:00"
+
+bar:
+  m_from: "8:00"
+  m_to: "12:00"
+  e_from: "19:00"
+  e_to: "24:00"
+
+sleep:
+  from: "24:00"
+  to: "8:00"
+
+prices:
+  -
+    type: person
+    price: 11
+  -
+    type: reduced
+    price: 8
+  -
+    type: tent
+    price: 4
+  -
+    type: car
+    price: 9
